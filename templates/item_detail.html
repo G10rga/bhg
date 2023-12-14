@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom styles for the item_detail page */
+        .small-image {
+            max-width: 50%; /* Adjust the maximum width as needed */
+            height: auto; /* Maintain the aspect ratio */
+            margin : auto
+        }
+    </style>
+    <title>{{ item['name'] }} Detail</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>{{ item['name'] }} Details</h1>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/' + item['image']) }}" class="card-img-top small-image" alt="{{ item['name'] }}">
+            <div class="card-body">
+                <h5 class="card-title">{{ item['name'] }}</h5>
+                <p class="card-text">Price: {{ item['price'] }}</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-image: url('/static/images/background.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  </style>
+  <title>My Website</title>
+</head>
+
+
+
+<div class="container mt-5">
+    <h2>PC Configurator</h2>
+    <div id="pc-configurator">
+        <!-- CPU Selection -->
+        <label for="cpu">CPU:</label>
+        <select id="cpu" name="cpu" required>
+            <option value="msi">None</option>
+            <option value="i5">Intel Core i5</option>
+            <option value="ryzen5">AMD Ryzen 5</option>
+            <!-- Add more CPU options as needed -->
+        </select>
+
+        <!-- Motherboard Selection -->
+        <label for="motherboard">Motherboard:</label>
+        <select id="motherboard" name="motherboard" required>
+            <option value="msi">None</option>
+
+            <option value="msi">MSI B450 TOMAHAWK</option>
+
+            <option value="asus">ASUS ROG Strix B550-F</option>
+            <!-- Add more motherboard options as needed -->
+        </select>
+
+        <!-- RAM Selection -->
+        <label for="ram">RAM:</label>
+        <select id="ram" name="ram" required>
+            <option value="msi">None</option>
+            <option value="8gb">8GB DDR4</option>
+            <option value="16gb">16GB DDR4</option>
+            <!-- Add more RAM options as needed -->
+        </select>
+
+        <!-- GPU Selection -->
+        <label for="gpu">GPU:</label>
+        <select id="gpu" name="gpu">
+            <option value="msi">None</option>
+            <option value="gtx1660">NVIDIA GTX 1660</option>
+            <option value="rx570">AMD Radeon RX 570</option>
+            <!-- Add more GPU options as needed -->
+        </select>
+
+        <!-- PSU Selection -->
+        <label for="psu">Power Supply (PSU):</label>
+        <select id="psu" name="psu" required>
+            <option value="msi">None</option>
+            <option value="500w">500W Bronze Certified</option>
+            <option value="650w">650W Gold Certified</option>
+            <!-- Add more PSU options as needed -->
+        </select>
+
+        <!-- Storage Selection -->
+        <label for="hdd">HDD:</label>
+        <select id="hdd" name="hdd">
+            <option value="msi">None</option>
+            <option value="1tb">1TB HDD</option>
+            <option value="2tb">2TB HDD</option>
+            <!-- Add more HDD options as needed -->
+        </select>
+
+        <label for="ssd">SSD:</label>
+        <select id="ssd" name="ssd">
+            <option value="msi">None</option>
+            <option value="256gb">256GB SSD</option>
+            <option value="512gb">512GB SSD</option>
+            <!-- Add more SSD options as needed -->
+        </select>
+
+        <!-- Case Selection -->
+        <label for="case">PC Case:</label>
+        <select id="case" name="case">
+            <option value="msi">None</option>
+            <option value="nzxt">NZXT H510</option>
+            <option value="corsair">Corsair 4000D</option>
+            <!-- Add more case options as needed -->
+        </select>
+    </div>
+</div>
